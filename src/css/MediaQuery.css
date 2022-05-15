@@ -5,6 +5,12 @@
   .header--container .nav--container .nav__link--container .nav__link a {
     font-size: 1.3em;
   }
+  .header--container .nav--container .nav__link--container .nav__link:after {
+    height: 12px;
+    position: absolute;
+    top: 18px;
+    left: 0px;
+  }
   .main--container {
     background-color: var(--yellowMain);
   }
@@ -67,6 +73,9 @@
   }
   .main--container .contact--container .contact__icon--container {
     margin: 10px;
+  }
+  .main--container .bottom--container {
+    padding: 20px;
   }
 }
 

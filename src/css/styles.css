@@ -454,6 +454,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin: 20px 0;
 }
 
 .main--container .outer--container .skill__cards--container .skill__card {
@@ -497,9 +498,9 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 20px auto;
+  margin: 0 auto;
   position: fixed;
-  bottom: 20px;
+  bottom: 5px;
   width: 100vw;
 }
 
@@ -522,7 +523,7 @@
 }
 
 .main--container .bottom--container {
-  padding: 20px;
+  padding: 20px 20px 55px 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -533,7 +534,6 @@
 
 .main--container .bottom--container .bottom__text {
   font-family: "Roboto-italic";
-  -webkit-transition: ease-in all 2s;
-  transition: ease-in all 2s;
+  text-align: center;
 }
 /*# sourceMappingURL=styles.css.map */

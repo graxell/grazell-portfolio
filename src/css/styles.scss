@@ -382,6 +382,7 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
+      margin: 20px 0;
 
       .skill__card {
         height: 120px;
@@ -411,9 +412,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 20px auto;
+    margin: 0 auto;
     position: fixed;
-    bottom: 20px;
+    bottom: 5px;
     width: 100vw;
 
     .contact__icon--container {
@@ -436,13 +437,13 @@
   }
 
   .bottom--container {
-    padding: 20px;
+    padding: 20px 20px 55px 20px;
     display: flex;
     justify-content: center;
 
     .bottom__text {
       font-family: "Roboto-italic";
-      transition: ease-in all 2s;
+      text-align: center;
     }
   }
 }
