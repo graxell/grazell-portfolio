@@ -1,22 +1,27 @@
 import React from "react";
+import SectionHeading from "../layout/SectionHeading";
 import { aboutData } from "./aboutData";
 
 const About = () => {
   const { title, tag, p1, p2 } = aboutData;
   return (
     <>
-      <div id="about" className="about--container">
+      <div id="about" className="outer--container page__height">
         <div className="about__page">
-          <h3 className="about__heading">{title}</h3>
+          <div>
+            <h3 className="about__heading ">{title}</h3>
+          </div>
           <div className="curly__bracket L__bracket">&#123;</div>
 
-          <p className="about__info info__top">{tag}</p>
+          <div className="about__info--wrapper">
+            <p className="about__info">{tag}</p>
 
-          <p className="about__info info__middle">{p1}</p>
+            <p className="about__info">{p1}</p>
 
-          <p className="about__info bottom">{p2}</p>
+            <p className="about__info">{p2}</p>
+          </div>
 
-          <div className="curly__bracket R__bracket">&#125;</div>
+          <div className="curly__bracket R__bracket">&#125;,</div>
         </div>
       </div>
     </>

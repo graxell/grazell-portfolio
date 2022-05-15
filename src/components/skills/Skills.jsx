@@ -1,4 +1,5 @@
 import React from "react";
+import SectionHeading from "../layout/SectionHeading";
 import { skillsData } from "./skillsData";
 
 const Skills = () => {
@@ -6,23 +7,27 @@ const Skills = () => {
 
   return (
     <>
-      <div id="skills" className="outer--container">
-        <div className="heading--container shadow__lighter">
-          <h2>{heading.title}</h2>
-        </div>
+      <div className="section__top" id="skills">
+        <div className="outer--container">
+          <SectionHeading heading={heading.title} />
 
-        <div className="skill__cards--container">
-          {skills.map((item, index) => {
-            return (
-              <div
-                key={index}
-                className={`skill__card ${item.background_color} shadow__darker`}
-              >
-                <h3 className="skill__title">{item.title}</h3>
-                <img src={item.logo} className="skill__img" />
-              </div>
-            );
-          })}
+          <div className="curly__bracket L__bracket">&#123;</div>
+
+          <div className="skill__cards--container">
+            {skills.map((item, index) => {
+              return (
+                <div
+                  key={index}
+                  className={`skill__card ${item.background_color} shadow__darker`}
+                >
+                  <h3 className="skill__title">{item.title}</h3>
+                  <img src={item.logo} className="skill__img" />
+                </div>
+              );
+            })}
+          </div>
+
+          <div className="curly__bracket R__bracket">&#125;;</div>
         </div>
       </div>
     </>

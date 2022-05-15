@@ -6,6 +6,7 @@ import Projects from "./components/projects/Projects";
 import Skills from "./components/skills/Skills";
 import ga_logo_big from "./assets/logo/ga_logo_big.png";
 import "./css/styles.css";
+import "./css/MediaQuery.css";
 
 function App() {
   return (
@@ -25,6 +26,12 @@ function App() {
         <Skills />
 
         <Contacts />
+
+        <div className="bottom--container">
+          <p className="bottom__text">
+            Please feel free to get in touch with me!
+          </p>
+        </div>
       </main>
     </div>
   );

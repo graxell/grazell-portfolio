@@ -26,7 +26,7 @@ export const projectsData = {
         "RESTFul",
         "NodeJS",
       ],
-      link: "https://trailer-flix.netlify.app",
+      live: "https://trailer-flix.netlify.app",
       github: "https://github.com/graxell/trailerflix",
     },
     {
@@ -37,7 +37,7 @@ export const projectsData = {
       description:
         "This is my first project in react using class components. It fetches 20 Simpsons quotes from the API, that the users can then filter or delete. The app also features a button that generates new set of quotes.",
       technology: ["React", "JavaScript", "CSS"],
-      link: "thesimpsons-quotes.netlify.app",
+      live: "https://thesimpsons-quotes.netlify.app",
       github: "https://github.com/graxell/simpsons-quotes",
     },
     {
@@ -48,7 +48,7 @@ export const projectsData = {
       description:
         "This is a recreation of the Leuchtturm1917 homepage using pure HTML and CSS. I used a variety of CSS features in creating this project, including flexbox and grid to have a well structured and consistent page.",
       technology: ["HTML5", "CSS"],
-      link: "recreating-leuchtturm1917.netlify.app",
+      live: "https://recreating-leuchtturm1917.netlify.app",
       github: "https://github.com/graxell/recreating-leuchtturm1917",
     },
     {
@@ -59,7 +59,7 @@ export const projectsData = {
       description:
         "The challenge for this hackathon was to create an app that reminds its user of important events. ",
       technology: ["JavaScript", "React", "CSS"],
-      link: "russells-anti-divorce-timer.netlify.app",
+      live: "https://russells-anti-divorce-timer.netlify.app",
       github: "https://github.com/snowdog773/ch9hackathon",
     },
   ],

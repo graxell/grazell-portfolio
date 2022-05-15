@@ -1,4 +1,5 @@
 import React from "react";
+import SectionHeading from "../layout/SectionHeading";
 import { projectsData } from "./projectsData";
 import github_icon from "../../assets/skillsIcon/github.png";
 import link_icon from "../../assets/logo/link.png";
@@ -7,11 +8,9 @@ const Projects = () => {
   const { heading, projects } = projectsData;
   return (
     <>
-      <div id="projects" className="outer--container">
+      <div id="projects" className="outer--container outer__projects">
         {/* HEADING */}
-        <div className="heading--container shadow__lighter">
-          <h2>{heading.title}</h2>
-        </div>
+        <SectionHeading heading={heading.title} />
 
         <div className="curly__bracket L__bracket">&#123;</div>
 
@@ -25,7 +24,7 @@ const Projects = () => {
               background_color,
               tag,
               technology,
-              link,
+              live,
               github,
             } = item;
             return (
@@ -35,25 +34,38 @@ const Projects = () => {
                 className={`project__card ${background_color} shadow__darker`}
               >
                 <div className="project__info">
+                  {/* title */}
                   <h3>
                     {title} <span>{tag}</span>
                   </h3>
 
+                  {/* description */}
                   <p className="project__description">{description}</p>
 
+                  {/* tech list */}
                   <ul className="project__tech">
                     {technology.map((item) => {
                       return <li className="project__tech--item">{item}</li>;
                     })}
                   </ul>
 
+                  {/* links */}
                   <div className="project__links">
-                    <img
-                      src={github_icon}
+                    <button
+                      className="link__btn shadow__darker"
                       onClick={() => window.open(github)}
-                    />
+                    >
+                      <img src={github_icon} />
+                      GitHub
+                    </button>
 
-                    <img src={link_icon} onClick={() => window.open(link)} />
+                    <button
+                      className="link__btn shadow__darker"
+                      onClick={() => window.open(live)}
+                    >
+                      <img src={link_icon} />
+                      Live
+                    </button>
                   </div>
                 </div>
 
@@ -65,7 +77,7 @@ const Projects = () => {
           })}
         </div>
 
-        <div className="curly__bracket R__bracket">&#125;</div>
+        <div className="curly__bracket R__bracket">&#125;,</div>
       </div>
     </>
   );

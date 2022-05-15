@@ -1,6 +1,6 @@
-import github_icon from "../../assets/skillsIcon/githubLight.png";
-import email_icon from "../../assets/logo/email.png";
-import linkedIn_icon from "../../assets/logo/linkedin.png";
+import github_icon from "../../assets/skillsIcon/github.png";
+import email_icon from "../../assets/logo/email_icon.png";
+import linkedIn_icon from "../../assets/logo/linkedin_circle.svg";
 
 export const contactsData = [
   {
