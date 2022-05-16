@@ -1,0 +1,51 @@
+// ABOUT PAGE
+.about__page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10vh 0 0;
+
+  .about__heading {
+    // background-color: var(--yellowMain);
+    padding: 5px 5px;
+    font-size: 1.1em;
+    font-family: "Barlow-Medium";
+    font-weight: lighter;
+    position: relative;
+    z-index: 1;
+    // margin-top: 10vh;
+  }
+
+  .about__heading:after {
+    content: "";
+    width: 270px;
+    height: 35px;
+    background-color: var(--yellowMain);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    animation: slideIn 5s;
+  }
+
+  .about__info--wrapper {
+    .about__info {
+      text-align: justify;
+      text-align-last: center;
+      padding: 0px 8px;
+      font-family: "Barlow-Regular";
+    }
+
+    .about__info:first-child {
+      text-align: center;
+      font-size: 1.1em;
+      font-family: "Barlow-Medium";
+    }
+
+    .about__info:nth-child(2) {
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+  }
+}

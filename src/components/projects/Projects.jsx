@@ -3,12 +3,13 @@ import SectionHeading from "../layout/SectionHeading";
 import { projectsData } from "./projectsData";
 import github_icon from "../../assets/skillsIcon/github.png";
 import link_icon from "../../assets/logo/link.png";
+import "./projectStyles.css";
 
 const Projects = () => {
   const { heading, projects } = projectsData;
   return (
     <>
-      <div id="projects" className="outer--container outer__projects">
+      <div id="projects" className="outer--container">
         {/* HEADING */}
         <SectionHeading heading={heading.title} />
 

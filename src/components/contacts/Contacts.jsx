@@ -1,5 +1,6 @@
 import React from "react";
 import { contactsData } from "./contactsData";
+import "./contactsStyles.css";
 
 const Contacts = () => {
   return (

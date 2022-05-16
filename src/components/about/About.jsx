@@ -1,12 +1,13 @@
 import React from "react";
 import SectionHeading from "../layout/SectionHeading";
 import { aboutData } from "./aboutData";
+import "./aboutStyles.css";
 
 const About = () => {
   const { title, tag, p1, p2 } = aboutData;
   return (
     <>
-      <div id="about" className="outer--container page__height">
+      <div id="about" className="outer--container controlled__height">
         <div className="about__page">
           <div>
             <h3 className="about__heading ">{title}</h3>

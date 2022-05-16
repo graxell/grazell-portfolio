@@ -1,6 +1,7 @@
 import React from "react";
 import SectionHeading from "../layout/SectionHeading";
 import { skillsData } from "./skillsData";
+import "./skillsStyles.css";
 
 const Skills = () => {
   const { heading, skills } = skillsData;

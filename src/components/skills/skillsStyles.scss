@@ -1,0 +1,30 @@
+// SKILLS
+
+.skill__cards--container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px 0;
+
+  .skill__card {
+    height: 120px;
+    width: 120px;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+
+    .skill__title {
+      font-size: 1em;
+      color: white;
+      padding: 10px 0;
+    }
+
+    .skill__img {
+      max-height: 50%;
+      max-width: 110px;
+    }
+  }
+}
